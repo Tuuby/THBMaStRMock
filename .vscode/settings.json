@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/fb3c6a97-3435-4219-b82c-0fbf40019697/resourceGroups/appsvc_linux_centralus/providers/Microsoft.Web/sites/THBMaStRMock",
+    "appService.deploySubpath": "."
+}

@@ -11,6 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.18.2",
+    "express-validator": "^6.15.0",
     "swagger-ui-express": "^4.6.2",
     "yamljs": "^0.3.0"
   }
