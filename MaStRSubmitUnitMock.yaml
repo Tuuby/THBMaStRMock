@@ -1,0 +1,102 @@
+openapi: "3.0.0"
+info:
+  title: "Submit Unit API"
+  version: "1.0.0"
+paths:
+  /submitUnit:
+    post:
+      summary: "Submit unit data"
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                user:
+                  type: object
+                  properties:
+                    username:
+                      type: string
+                    password:
+                      type: string
+                personData:
+                  type: object
+                  properties:
+                    salutation:
+                      type: string
+                    title:
+                      type: string
+                    firstName:
+                      type: string
+                    lastName:
+                      type: string
+                    birthDate:
+                      type: string
+                      format: date
+                    email:
+                      type: string
+                      format: email
+                address:
+                  type: object
+                  properties:
+                    postalCode:
+                      type: string
+                    city:
+                      type: string
+                    street:
+                      type: string
+                    houseNumber:
+                      type: string
+                    addressAddition:
+                      type: string
+                    country:
+                      type: string
+                    state:
+                      type: string
+                    longitude:
+                      type: number
+                      format: double
+                    latitude:
+                      type: number
+                      format: double
+                plantDetails:
+                  type: object
+                  properties:
+                    unitName:
+                      type: string
+                    commissioningDate:
+                      type: string
+                      format: date
+                    grossPower:
+                      type: number
+                      format: double
+                    inverterLS:
+                      type: string
+                    batGrossPower:
+                      type: number
+                      format: double
+                    batInverter:
+                      type: string
+                    storageCapacity:
+                      type: number
+                      format: double
+      responses:
+        200:
+          description: "Unit data submitted successfully"
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+        400:
+          description: "Bad request, invalid input data"
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string

@@ -1,0 +1,35 @@
+{
+    "user": {
+      "username": "testuser",
+      "password": "testpassword"
+    },
+    "personData": {
+      "salutation": "Herr",
+      "title": "Dr.",
+      "firstName": "Max",
+      "lastName": "Mustermann",
+      "birthDate": "1990-01-01",
+      "email": "max.mustermann@example.com"
+    },
+    "address": {
+      "postalCode": "12345",
+      "city": "Musterstadt",
+      "street": "Musterstraße",
+      "houseNumber": "42",
+      "addressAddition": "",
+      "country": "Deutschland",
+      "state": "Musterland",
+      "longitude": 10.12345,
+      "latitude": 50.12345
+    },
+    "plantDetails": {
+      "unitName": "Musteranlage",
+      "commissioningDate": "2022-01-01",
+      "grossPower": 100.5,
+      "inverterLS": "Muster-Wechselrichter LS",
+      "batGrossPower": 50.5,
+      "batInverter": "Muster-Wechselrichter BAT",
+      "storageCapacity": 200.5
+    }
+  }
+  
