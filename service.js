@@ -35,9 +35,11 @@ const validationRules = [
   body('plantDetails.commissioningDate').isDate().withMessage('Commissioning date must be a valid date'),
   body('plantDetails.grossPower').isNumeric().withMessage('Gross power must be a number'),
   body('plantDetails.inverterLS').notEmpty().withMessage('Inverter LS is required'),
-  body('plantDetails.batGrossPower').isNumeric().withMessage('BAT gross power must be a number'),
-  body('plantDetails.batInverter').notEmpty().withMessage('BAT inverter is required'),
-  body('plantDetails.storageCapacity').isNumeric().withMessage('Storage capacity must be a number')
+  body('plantDetails.inverterPower').isNumeric().withMessage('Inverter Power is required'),
+  body('plantDetails.batGrossPower').optional().isNumeric().withMessage('BAT gross power must be a number'),
+  body('plantDetails.batInverter').optional().notEmpty().withMessage('BAT inverter is required'),
+  body('plantDetails.batInverterPower').optional().isNumeric().withMessage('BAT inverter power is required'),
+  body('plantDetails.storageCapacity').optional().isNumeric().withMessage('Storage capacity must be a number')
 ];
 
 // Mock submitUnit endpoint with validation
