@@ -164,7 +164,7 @@ app.get('/units/:id', (req, res) => {
   });
 });
 
-app.put('/unit/:id', validationRules, (req, res) => {
+app.put('/units/:id', validationRules, (req, res) => {
   const { id } = req.params;
   const unitData = req.body;
 
